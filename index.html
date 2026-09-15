@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a0c0f" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="TACOPS" />
+    <link rel="apple-touch-icon" href="/tacops-ios/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/tacops-ios/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/tacops-ios/manifest.json" />
+    <title>TACOPS</title>
+    <script type="module" crossorigin src="/tacops-ios/assets/index-D6i1i_UM.js"></script>
+    <link rel="stylesheet" crossorigin href="/tacops-ios/assets/index-6YCEsVRJ.css">
+  <link rel="manifest" href="/tacops-ios/manifest.json"></head>
+  <body class="bg-zinc-950">
+    <div id="root"></div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("/tacops-ios/service-worker.js");
+        });
+      }
+    </script>
+  </body>
+</html>

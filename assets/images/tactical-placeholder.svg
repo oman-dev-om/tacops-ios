@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420" fill="none">
+  <rect width="640" height="420" fill="#0A0F0A"/>
+  <rect x="18" y="18" width="604" height="384" rx="10" stroke="#2A3B2A" stroke-width="2"/>
+  <path d="M18 72H622M18 126H622M18 180H622M18 234H622M18 288H622M18 342H622" stroke="#1A2B1A" stroke-width="1"/>
+  <path d="M76 18V402M134 18V402M192 18V402M250 18V402M308 18V402M366 18V402M424 18V402M482 18V402M540 18V402" stroke="#1A2B1A" stroke-width="1"/>
+  <circle cx="320" cy="210" r="76" stroke="#5A7A5A" stroke-width="3"/>
+  <circle cx="320" cy="210" r="40" stroke="#5A7A5A" stroke-width="2"/>
+  <path d="M320 120V300M230 210H410" stroke="#7FA07F" stroke-width="3"/>
+  <text x="320" y="390" fill="#7FA07F" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">TACOPS</text>
+</svg>
