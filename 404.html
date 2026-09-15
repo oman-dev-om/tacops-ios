@@ -12,13 +12,18 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/tacops-ios/icons/apple-touch-icon.png" />
     <link rel="manifest" href="/tacops-ios/manifest.json" />
     <title>TACOPS</title>
-    <script type="module" crossorigin src="/tacops-ios/assets/index-D6i1i_UM.js"></script>
-    <link rel="stylesheet" crossorigin href="/tacops-ios/assets/index-6YCEsVRJ.css">
+    <script type="module" crossorigin src="/tacops-ios/assets/index-Bef3xPsm.js"></script>
+    <link rel="stylesheet" crossorigin href="/tacops-ios/assets/index-D6qaA9Iz.css">
   <link rel="manifest" href="/tacops-ios/manifest.json"></head>
   <body class="bg-zinc-950">
     <div id="root"></div>
     <script>
+      window.__tacopsSwEvents = [];
       if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.addEventListener("message", function (event) {
+          window.__tacopsSwEvents.push(event.data);
+          window.dispatchEvent(new CustomEvent("tacops-sw-message", { detail: event.data }));
+        });
         window.addEventListener("load", function () {
           navigator.serviceWorker.register("/tacops-ios/service-worker.js");
         });
