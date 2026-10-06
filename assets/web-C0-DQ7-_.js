@@ -1,1 +1,0 @@
-import{t as e}from"./index-Bef3xPsm.js";var t=class extends e{constructor(){super(),this.registerWindowListener(`devicemotion`,`accel`),this.registerWindowListener(`deviceorientation`,`orientation`)}};export{t as MotionWeb};
